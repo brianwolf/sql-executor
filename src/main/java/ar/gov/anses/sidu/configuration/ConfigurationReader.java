@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 
 public class ConfigurationReader {
 
-	private final String propFileName = "sidu-jlib.properties";
+	private final String propFileName = "sql-executor.properties";
 
 	private static final Logger LOGGER = Logger.getLogger("ar.gov.anses.sieel.jlib.configuration.ConfigurationReader");
 

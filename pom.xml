@@ -1,14 +1,16 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>io.moorea</groupId>
-	<artifactId>sidu-jlib</artifactId>
+	<groupId>lobezzzno.org</groupId>
+	<artifactId>sql-executor</artifactId>
 	<version>0.0.23-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>sql-executor</name>
 	<description>sql-executor</description>
 	<organization>
-		<name>LeafNoise</name>
-		<url>moorea.io</url>
+		<name>LobezZzno</name>
+		<url>lobezzzno.org</url>
 	</organization>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -39,7 +41,6 @@
 		<dependency>
 			<groupId>com.microsoft.sqlserver</groupId>
 			<artifactId>mssql-jdbc</artifactId>
-			<version>6.1.0.jre7</version>
 		</dependency>
 
 		<dependency>
@@ -53,35 +54,4 @@
 	<build>
 		<finalName>sql-executor</finalName>
 	</build>
-	<scm>
-		<connection>${scm.connection}</connection>
-		<url>${scm.url}</url>
-
-		<developerConnection>${scm.developerConnection}</developerConnection>
-		<tag>sidu-jlib-0.0.1</tag>
-
-	</scm>
-	<profiles>
-		<profile>
-			<id>anses</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<properties>
-				<scm.connection>scm:git:https://git.leafnoise.io/moorea/anses-sidu-jlib.git</scm.connection>
-				<scm.url>https://git.leafnoise.io/moorea/anses-sidu-jlib.git</scm.url>
-				<scm.developerConnection>scm:git:https://git.leafnoise.io/moorea/anses-sidu-jlib.git</scm.developerConnection>
-			</properties>
-		</profile>
-	</profiles>
-	<distributionManagement>
-		<snapshotRepository>
-			<id>anses-repo</id>
-			<url>http://ansesalm.anses.gov.ar/nexus/content/repositories/maven-anses-snapshots</url>
-		</snapshotRepository>
-		<repository>
-			<id>anses-repo</id>
-			<url>http://ansesalm.anses.gov.ar/nexus/content/repositories/maven-anses-releases</url>
-		</repository>
-	</distributionManagement>
 </project>
