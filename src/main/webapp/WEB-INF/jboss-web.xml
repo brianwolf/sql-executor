@@ -1,0 +1,3 @@
+<jboss-web>
+    <context-root>sql-executor</context-root>
+</jboss-web>

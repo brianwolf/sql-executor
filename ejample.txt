@@ -1,0 +1,35 @@
+http://localhost:8080/execute/sp
+{
+    "schema": "dbo",
+    "name": "DU_GENERAR_PASE",
+    "parametersMap": {
+    	"listaExpedientes": "02420044272246DE1000001,02420047486018DE1000001",
+		"observacionRemito": "soy una observacion", 
+		"origen": 74,
+		"destino": 96,
+		"estado": "e",
+		"numeroRemitoAnme": null,
+		"oficinaAnmeSalida": 96,
+		"oficinaAnmeEntrada": 96,
+		"motivo": "soy un motivo", 
+		"enviadoPor": "pepe", 
+		"atendidoPor": "pepe"
+    }
+}
+
+
+
+response 200:
+
+[
+    {
+        "REMITO_ID": 18,
+        "PASE_ID": 387,
+        "EXPEDIENTE": "02420044272246DE1000001"
+    },
+    {
+        "REMITO_ID": 18,
+        "PASE_ID": 388,
+        "EXPEDIENTE": "02420047486018DE1000001"
+    }
+]
